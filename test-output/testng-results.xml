@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-18T21:10:10 IST" name="Suite" finished-at="2025-03-18T21:10:26 IST" duration-ms="16134">
+    <groups>
+    </groups>
+    <test started-at="2025-03-18T21:10:10 IST" name="ChromeTest" finished-at="2025-03-18T21:10:17 IST" duration-ms="7082">
+      <class name="selflearn.selflearn.BaseCls">
+        <test-method is-config="true" signature="browserInit(java.lang.String)[pri:0, instance:selflearn.selflearn.BaseCls@3c77d488]" started-at="2025-03-18T21:10:10 IST" name="browserInit" finished-at="2025-03-18T21:10:12 IST" duration-ms="1579" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInit -->
+        <test-method signature="test1(java.lang.String)[pri:0, instance:selflearn.selflearn.BaseCls@3c77d488]" started-at="2025-03-18T21:10:12 IST" name="test1" finished-at="2025-03-18T21:10:13 IST" duration-ms="1050" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:selflearn.selflearn.BaseCls@3c77d488]" started-at="2025-03-18T21:10:13 IST" name="tearDown" finished-at="2025-03-18T21:10:13 IST" duration-ms="183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="browserInit(java.lang.String)[pri:0, instance:selflearn.selflearn.BaseCls@3c77d488]" started-at="2025-03-18T21:10:13 IST" name="browserInit" finished-at="2025-03-18T21:10:14 IST" duration-ms="1121" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInit -->
+        <test-method signature="test2(java.lang.String)[pri:0, instance:selflearn.selflearn.BaseCls@3c77d488]" started-at="2025-03-18T21:10:14 IST" name="test2" finished-at="2025-03-18T21:10:15 IST" duration-ms="802" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:selflearn.selflearn.BaseCls@3c77d488]" started-at="2025-03-18T21:10:15 IST" name="tearDown" finished-at="2025-03-18T21:10:15 IST" duration-ms="146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="browserInit(java.lang.String)[pri:0, instance:selflearn.selflearn.BaseCls@3c77d488]" started-at="2025-03-18T21:10:15 IST" name="browserInit" finished-at="2025-03-18T21:10:17 IST" duration-ms="1231" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInit -->
+        <test-method signature="test3(java.lang.String)[pri:0, instance:selflearn.selflearn.BaseCls@3c77d488]" started-at="2025-03-18T21:10:17 IST" name="test3" finished-at="2025-03-18T21:10:17 IST" duration-ms="750" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:selflearn.selflearn.BaseCls@3c77d488]" started-at="2025-03-18T21:10:17 IST" name="tearDown" finished-at="2025-03-18T21:10:17 IST" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- selflearn.selflearn.BaseCls -->
+    </test> <!-- ChromeTest -->
+    <test started-at="2025-03-18T21:10:10 IST" name="FireFoxTest" finished-at="2025-03-18T21:10:26 IST" duration-ms="16134">
+      <class name="selflearn.selflearn.BaseCls">
+        <test-method is-config="true" signature="browserInit(java.lang.String)[pri:0, instance:selflearn.selflearn.BaseCls@8462f31]" started-at="2025-03-18T21:10:10 IST" name="browserInit" finished-at="2025-03-18T21:10:14 IST" duration-ms="3854" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInit -->
+        <test-method signature="test1(java.lang.String)[pri:0, instance:selflearn.selflearn.BaseCls@8462f31]" started-at="2025-03-18T21:10:14 IST" name="test1" finished-at="2025-03-18T21:10:16 IST" duration-ms="1352" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:selflearn.selflearn.BaseCls@8462f31]" started-at="2025-03-18T21:10:16 IST" name="tearDown" finished-at="2025-03-18T21:10:17 IST" duration-ms="1687" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="browserInit(java.lang.String)[pri:0, instance:selflearn.selflearn.BaseCls@8462f31]" started-at="2025-03-18T21:10:17 IST" name="browserInit" finished-at="2025-03-18T21:10:20 IST" duration-ms="2956" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInit -->
+        <test-method signature="test2(java.lang.String)[pri:0, instance:selflearn.selflearn.BaseCls@8462f31]" started-at="2025-03-18T21:10:20 IST" name="test2" finished-at="2025-03-18T21:10:21 IST" duration-ms="1235" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:selflearn.selflearn.BaseCls@8462f31]" started-at="2025-03-18T21:10:21 IST" name="tearDown" finished-at="2025-03-18T21:10:22 IST" duration-ms="817" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="browserInit(java.lang.String)[pri:0, instance:selflearn.selflearn.BaseCls@8462f31]" started-at="2025-03-18T21:10:22 IST" name="browserInit" finished-at="2025-03-18T21:10:25 IST" duration-ms="2219" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInit -->
+        <test-method signature="test3(java.lang.String)[pri:0, instance:selflearn.selflearn.BaseCls@8462f31]" started-at="2025-03-18T21:10:25 IST" name="test3" finished-at="2025-03-18T21:10:26 IST" duration-ms="1200" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:selflearn.selflearn.BaseCls@8462f31]" started-at="2025-03-18T21:10:26 IST" name="tearDown" finished-at="2025-03-18T21:10:26 IST" duration-ms="770" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- selflearn.selflearn.BaseCls -->
+    </test> <!-- FireFoxTest -->
+  </suite> <!-- Suite -->
+</testng-results>
