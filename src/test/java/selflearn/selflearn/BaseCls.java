@@ -41,6 +41,7 @@ public class BaseCls {
 		driver.get("https://www.selenium.dev/documentation/grid/getting_started/");
 		System.out.println("Title of the driver from test2 from the browser: "+browser+" is \""+driver.getTitle()+"\"");
 		driver.manage().timeouts().implicitlyWait(200000, TimeUnit.SECONDS);
+		System.out.println("Test 2 done");
 	}
 	@SuppressWarnings("deprecation")
 	@Test

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="6" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="6" parallel="tests" name="Default test(failed)">
+  <test thread-count="6" parallel="tests" name="FireFoxTest(failed)">
+    <parameter name="os" value="Windows"/>
+    <parameter name="browser" value="firefox"/>
     <classes>
       <class name="selflearn.selflearn.BaseCls">
         <methods>
@@ -13,5 +15,19 @@
         </methods>
       </class> <!-- selflearn.selflearn.BaseCls -->
     </classes>
-  </test> <!-- Default test(failed) -->
+  </test> <!-- FireFoxTest(failed) -->
+  <test thread-count="6" parallel="tests" name="ChromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="selflearn.selflearn.BaseCls">
+        <methods>
+          <include name="tearDown"/>
+          <include name="test1"/>
+          <include name="test3"/>
+          <include name="browserInit"/>
+          <include name="test2"/>
+        </methods>
+      </class> <!-- selflearn.selflearn.BaseCls -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
