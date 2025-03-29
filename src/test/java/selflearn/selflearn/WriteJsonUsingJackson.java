@@ -14,44 +14,47 @@ import org.json.JSONObject;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 
-public class ReadWriteJson {
+public class WriteJsonUsingJackson {
 
 	public static void main(String[] args) {
-		// READING DATA FROM THE JSON FILE USING ORG.JSON PACKAGE
-		try {
-        String content = new String(Files.readAllBytes(Paths.get("SampleJson.json")));
-        JSONObject jsonObject = new JSONObject(content);
-        System.out.println(jsonObject.toString());
+//		// READING DATA FROM THE JSON FILE USING ORG.JSON PACKAGE
+//		try {
+//        String content = new String(Files.readAllBytes(Paths.get("SampleJson.json")));
+//        JSONObject jsonObject = new JSONObject(content);
+//        System.out.println(jsonObject.toString());
 //        JSONObject jsonObject2 = new JSONObject(jsonObject.));
 //        System.out.println("Name is: "+jsonObject.getString("jobTitleName"));
-        JSONArray arr=(JSONArray) (jsonObject.getJSONArray("Employees"));
-        JSONObject obj2=arr.getJSONObject(1);
-        System.out.println("First arrya is: "+obj2.toString());
-        
-    } catch (IOException e) {
-        e.printStackTrace();
-    }
+//        JSONArray arr=(JSONArray) (jsonObject.getJSONArray("Employees"));
+//        JSONObject obj2=arr.getJSONObject(1);
+//        System.out.println("First array is: "+obj2.toString());
+//        
+//    } catch (IOException e) {
+//        e.printStackTrace();
+//    }
 
 	// WRITING DATA TO THE JSON FILE USING ORG.JSON PACKAGE
-		JSONObject jsonObject = new JSONObject();
-        jsonObject.put("name", "Harish");
-        jsonObject.put("age", 34);
-        JSONObject jsonObject2 = new JSONObject();
-        jsonObject2.put("name", "Priyanka");
-        jsonObject2.put("age", 30);
-
-        try (FileWriter file = new FileWriter("WriteData.json")) {
-            file.write(jsonObject.toString());
-            System.out.println("JSON data written to file successfully.");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//		JSONObject jsonObject = new JSONObject();
+//        jsonObject.put("name", "Harish");
+//        jsonObject.put("age", 34);
+//        JSONObject jsonObject2 = new JSONObject();
+//        jsonObject2.put("name", "Priyanka");
+//        jsonObject2.put("age", 30);
+//
+//        try (FileWriter file = new FileWriter("WriteData.json")) {
+//            file.write(jsonObject.toString());
+//            file.write(jsonObject2.toString());
+//            System.out.println("JSON data written to file successfully.");
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
       //***********************USING JACKSON DATABIND************************************
         ObjectMapper mapper= new ObjectMapper();
         ObjectWriter writer=mapper.writerWithDefaultPrettyPrinter();
         myEmp obj1=new myEmp("Harish", 35);
         myEmp obj2=new myEmp("Yashu", 2);
-        List<myEmp> ls=Arrays.asList(obj1,obj2);
+        myEmp obj3=new myEmp("Chinnu", 8);
+        myEmp obj4=new myEmp("Sudhanvi", 6);
+        List<myEmp> ls=Arrays.asList(obj1,obj2,obj3,obj4);
         try {
         	writer.writeValue(new File("Output.json"), ls);
         	System.out.println("File written successfully");
