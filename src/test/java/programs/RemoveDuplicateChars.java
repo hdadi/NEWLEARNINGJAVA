@@ -9,11 +9,9 @@ public class RemoveDuplicateChars {
 
 	@SuppressWarnings("unlikely-arg-type")
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		String sent="happy anniversary";
+		// output: hapy nivers --  output2: happy nnivers
+		String sent="happyn anniversary";
 		char[] arr=sent.toCharArray();
-//		output: hapy nivers --  output2: happy nnivers
-
 		StringBuilder output1=new StringBuilder();
 		StringBuilder output2=new StringBuilder();
 		Map<Character, Integer> hm=new LinkedHashMap<Character,Integer>();
@@ -23,8 +21,9 @@ public class RemoveDuplicateChars {
 		if(hm.containsKey(key)) {
 			int value=hm.get(key);
 			hm.put(key,value+1);
+			if((i+1<arr.length) && key==arr[i+1]) output2.append(key);
 		}
-		else if(key==arr[i+1]){
+		else if((i+1<arr.length) && key==arr[i+1]){
 			output2.append(key);
 		}
 		else {
@@ -35,6 +34,5 @@ public class RemoveDuplicateChars {
 		}
 		System.out.println("Expected output1 is: "+output1.toString());
 		System.out.println("Expected output2 is: "+output2.toString());
-
 }
 }

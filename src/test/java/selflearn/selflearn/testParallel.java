@@ -29,11 +29,11 @@ public class testParallel{
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 //		driver.close();
 	}
-	@AfterMethod
-	public void close() {
-		driver.quit();
-		
-	}
+//	@AfterMethod
+//	public void close() {
+//		driver.quit();
+//		
+//	}
 	@AfterMethod
 	public void tearDown() {
 		driver.quit();		
