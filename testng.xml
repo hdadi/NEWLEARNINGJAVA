@@ -7,13 +7,6 @@
       <class name="selflearn.selflearn.BaseCls"/>
     </classes>
   </test>
-  <test name="FireFoxTest">
-  <parameter name="browser" value="firefox"/>
-  <parameter name="os" value="Windows"/>
-    <classes>
-      <class name="selflearn.selflearn.BaseCls"/>
-    </classes>
-  </test> -->
   <test name="TestXample">
   <parameter name="browser" value="chrome"/>
   <classes>
