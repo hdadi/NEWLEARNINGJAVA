@@ -6,6 +6,7 @@
     <classes>
       <class name="selflearn.selflearn.BaseCls"/>
     </classes>
+  <!-- testing -->
   </test>
   <test name="TestXample">
   <parameter name="browser" value="chrome"/>
