@@ -1,5 +1,6 @@
 package programs;
 
+import java.lang.reflect.Field;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Hashtable;
@@ -8,6 +9,7 @@ import java.util.Map;
 import java.util.TreeMap;
 
 public class HashLinkedCheck {
+	private String name="Harish";
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -34,4 +36,30 @@ public class HashLinkedCheck {
 
 	}
 
+}
+
+class testPrivate extends HashLinkedCheck{
+	public static void main(String[] args) {
+		HashLinkedCheck hl=new HashLinkedCheck();
+		try {
+			Field field = hl.getClass().getDeclaredField("name");
+			field.setAccessible(true);
+			
+			String actualName=(String)field.get(hl);
+			System.out.println("Private field fetched is: "+actualName);
+		} catch (NoSuchFieldException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SecurityException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IllegalArgumentException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
 }
