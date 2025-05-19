@@ -3,6 +3,7 @@ package selflearn.selflearn;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.stream.Collectors;
 
 public class ComparatorExample{
 
@@ -12,28 +13,25 @@ public class ComparatorExample{
 		al.add(new EmpPojo("Priyanka",1010,32));
 		al.add(new EmpPojo("Satish",1008,41));
 		al.add(new EmpPojo("Lakshmi",1007,38));
-		al.add(new EmpPojo("Yashu",1011,3));
+		al.add(new EmpPojo("Yashu",1011,3));		
+		al.stream().sorted((o1,o2)->o1.getEmpAge()-o2.getEmpAge()).collect(Collectors.toList()).forEach(System.out::println);
 		
 		Collections.sort(al, new GetDataByName());
 		System.out.println("**************Sorted data by name************");
 		for(int i=0;i<al.size();i++) {
 			System.out.println(al.get(i));
-		}
-		
+		}		
 		Collections.sort(al, new GetDataByAge());
 		System.out.println("**************Sorted data by age*************");
 		for(int i=0;i<al.size();i++) {
 			System.out.println(al.get(i));
-		}
-		
+		}		
 		Collections.sort(al, new GetDataByID());
 		System.out.println("**************Sorted data by ID*************");
 		for(int i=0;i<al.size();i++) {
 			System.out.println(al.get(i));
 		}
-
 	}
-
 }
 class GetDataByName implements Comparator<EmpPojo>{
 	@Override

@@ -18,7 +18,7 @@ public class FindSecondHighestFromMap {
 		Integer secondHigh=hm.values().stream().sorted(Collections.reverseOrder()).skip(1).findFirst().get();		
 		for(Entry<String, Integer> entry: hm.entrySet()) {
 			if(entry.getValue()==secondHigh) {
-				System.out.println("Second highest value is: "+entry.getKey());
+				System.out.println("Second highest fruit and its value is: "+entry.getKey()+"="+entry.getValue());
 			}
 		}	
 	}

@@ -16,7 +16,5 @@ public class ReadJsonUsingJackson {
 		ObjectMapper mapper=new ObjectMapper();
 		List<UserPojo> pojo=mapper.readValue(new File("Output.json"), new TypeReference<List<UserPojo>>() {});
 		System.out.println("User data is: "+pojo);
-;
 	}
-
 }

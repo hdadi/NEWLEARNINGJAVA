@@ -21,8 +21,7 @@ public class FindDuplicatesUsingStreamAPI {
 	}
 	public static String removeNonConsecutiveDuplicates(String str) {
         StringBuilder result = new StringBuilder();
-        result.append(str.charAt(0));
-        
+        result.append(str.charAt(0));        
         for (int i = 1; i < str.length(); i++) {
             if (str.charAt(i) != str.charAt(i - 1)) {
                 result.append(str.charAt(i));
@@ -30,5 +29,4 @@ public class FindDuplicatesUsingStreamAPI {
         }
         return result.toString();
     }
-
 }

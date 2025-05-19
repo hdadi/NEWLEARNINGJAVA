@@ -36,7 +36,6 @@ public class EncryptionUtil {
 		//	TO CREATE DECRYPTED DATA
 		String encryptedResponse = encryptedData;
 		String decryptedData = EncryptionUtil.decrypt(encryptedResponse, key);
-		System.out.println("Decrypted Response: " + decryptedData);
-		
+		System.out.println("Decrypted Response: " + decryptedData);		
 	}
 }

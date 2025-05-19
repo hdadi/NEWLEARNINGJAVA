@@ -32,14 +32,12 @@ public class HashLinkedCheck {
 		System.out.println("LinkedHashmap values are: "+lhm.toString());
 		System.out.println("TreeeMap values are: "+tm.toString());
 		System.out.println("HashTable values are: "+ht.toString());
-		
-
-	}
-
+		testPrivate.checkReflection();
+		}
 }
 
 class testPrivate extends HashLinkedCheck{
-	public static void main(String[] args) {
+	public static void checkReflection() {
 		HashLinkedCheck hl=new HashLinkedCheck();
 		try {
 			Field field = hl.getClass().getDeclaredField("name");
@@ -59,7 +57,6 @@ class testPrivate extends HashLinkedCheck{
 		} catch (IllegalAccessException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
-		
+		}		
 	}
 }
