@@ -6,8 +6,8 @@ import java.util.UUID;
 public class ToGenerateUniqueEmailID {
 
 	public static void main(String[] args) {
-		        String uniqueEmail = generateTimestampEmail("user", "example.com");
-//		        String uniqueEmail = generateUniqueEmail("user", "example.com");
+//		        String uniqueEmail = generateTimestampEmail("user", "example.com");
+		        String uniqueEmail = generateUniqueEmail("user", "example.com");
 		        System.out.println("Generated Email: " + uniqueEmail);
 		        System.out.println("random value is: "+(int)(Math.random()*100));
 		    }

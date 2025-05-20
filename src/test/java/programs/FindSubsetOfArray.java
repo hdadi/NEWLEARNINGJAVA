@@ -5,9 +5,7 @@ public class FindSubsetOfArray {
 	    public static void main(String[] args) {
 	        int[] mainArray = {10, 20, 30, 40, 50, 60};
 	        int[] subsetArray = {20, 30, 50, 80};
-
-	        boolean isSubset = checkSubset(mainArray, subsetArray);
-	        
+	        boolean isSubset = checkSubset(mainArray, subsetArray);	        
 	        if (isSubset) {
 	            System.out.println("Subset array is present in the main array.");
 	        } else {
